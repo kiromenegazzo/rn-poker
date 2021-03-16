@@ -1,22 +1,27 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import {EN, RU} from "../../intl";
-import { View, Switch, Text} from 'react-native';
-import {styles} from "./styles";
-import {primaryColor, secondaryColor} from "../../constants/colors";
 
-export const LangSwitcher = ({lang, onPress}) => {
+import { View, Switch, Text } from 'react-native';
 
-    return(
-        <View style={styles.switch}>
-            <Text style={styles.text}>{RU}</Text>
-            <Switch
-                trackColor={{ false: "red", true: secondaryColor }}
-                thumbColor={lang === RU ? "red" : primaryColor}
-                onValueChange={() => onPress(lang === RU ? EN : RU)}
-                value={lang === EN}
-            />
-            <Text style={styles.text}>{EN}</Text>
-        </View>
-    );
-}
+import { primaryColor, secondaryColor } from '../../constants/colors';
+import { EN, RU, langs } from '../../intl';
 
+import { styles } from './styles';
+
+export const LangSwitcher = ({ lang, onPress }) => (
+  <View style={styles.switch}>
+    <Text style={styles.text}>{RU}</Text>
+    <Switch
+      thumbColor={lang === RU ? 'red' : primaryColor}
+      trackColor={{ false: 'red', true: secondaryColor }}
+      value={lang === EN}
+      onValueChange={() => onPress(lang === RU ? EN : RU)}
+    />
+    <Text style={styles.text}>{EN}</Text>
+  </View>
+);
+
+LangSwitcher.propTypes = {
+  lang: PropTypes.oneOf(langs).isRequired,
+  onPress: PropTypes.func.isRequired,
+};

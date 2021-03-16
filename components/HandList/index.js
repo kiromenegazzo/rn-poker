@@ -1,1 +1,1 @@
-export {HandList} from './HandList';
+export { HandList } from './HandList';

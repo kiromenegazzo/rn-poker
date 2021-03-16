@@ -1,27 +1,31 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { View, Text, Pressable} from 'react-native';
-import * as Sprite from '../Sprite';
-import {styles} from "./styles";
 
-const {SVG_NAME_LIST} = Sprite;
+import { View, Text, Pressable } from 'react-native';
 
-export const HandList = ({items, onPress}) => {
+import { HAND_LIST } from '../../constants/handList';
+import * as Icons from '../Icon';
 
-    return(
-        <View style={styles.list}>
-            {items.map((item, index) => {
-                const {name} = item;
-                const svgName = SVG_NAME_LIST[index];
-                const Hand = Sprite[svgName];
+import { styles } from './styles';
 
-                return(
-                  <Pressable key={name} style={styles.item} onPress={() => onPress({item, index})}>
-                      <Hand/>
-                      <Text style={styles.name}>{name}</Text>
-                  </Pressable>
-                );
-            })}
-        </View>
-    )
+export const HandList = ({ items, onPress }) => (
+  <View style={styles.list}>
+    {items.map((item, index) => {
+      const { name } = item;
+      const svgName = HAND_LIST[index];
+      const Icon = Icons[svgName];
+
+      return (
+        <Pressable key={name} style={styles.item} onPress={() => onPress({ item, index })}>
+          <Icon />
+          <Text style={styles.name}>{name}</Text>
+        </Pressable>
+      );
+    })}
+  </View>
+);
+
+HandList.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  onPress: PropTypes.func.isRequired,
 };
-
