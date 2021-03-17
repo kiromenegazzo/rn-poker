@@ -2,7 +2,7 @@ import React from 'react';
 
 import Svg, { Circle, Line } from 'react-native-svg';
 
-import { greenDarkColor } from '../../constants/colors';
+import { greenDarkColor } from 'constants/colors';
 
 export const Close = () => {
   const strokeWidth = 3;

@@ -9,16 +9,16 @@ module.exports = {
     browser: true,
   },
 
-  // settings: {
-  //   'import/resolver': {
-  //     webpack: {
-  //       config: 'webpack.config.js',
-  //       env: {
-  //         mode: 'production',
-  //       },
-  //     },
-  //   },
-  // },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.config.js',
+        env: {
+          mode: 'production',
+        },
+      },
+    },
+  },
 
   parser: 'babel-eslint',
 

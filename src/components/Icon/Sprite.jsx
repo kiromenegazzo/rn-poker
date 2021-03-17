@@ -3,7 +3,7 @@ import React from 'react';
 
 import Svg, { Defs, Rect } from 'react-native-svg';
 
-import { blackColor, whiteColor } from '../../constants/colors';
+import { blackColor, whiteColor } from 'constants/colors';
 
 export const Sprite = ({ width = '80%', height = '80%', children }) => (
   <Svg height={height} viewBox="0 0 200000 130000" width={width}>

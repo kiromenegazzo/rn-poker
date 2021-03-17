@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { greenDarkColor } from '../../constants/colors';
+import { greenDarkColor } from 'constants/colors';
 
 export const styles = StyleSheet.create({
   switch: {

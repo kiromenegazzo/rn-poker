@@ -3,8 +3,9 @@ import React from 'react';
 
 import { View, Text, Pressable } from 'react-native';
 
-import { HAND_LIST } from '../../constants/handList';
-import * as Icons from '../Icon';
+import * as Icons from 'components/Icon';
+
+import { HAND_LIST } from 'constants/handList';
 
 import { styles } from './styles';
 

@@ -3,8 +3,8 @@ import React from 'react';
 
 import { View, Switch, Text } from 'react-native';
 
-import { greenColor, greenDarkColor, redColor, redDarkColor } from '../../constants/colors';
-import { EN, RU, langs } from '../../intl';
+import { greenColor, greenDarkColor, redColor, redDarkColor } from 'constants/colors';
+import { EN, RU, langs } from 'constants/intl';
 
 import { styles } from './styles';
 

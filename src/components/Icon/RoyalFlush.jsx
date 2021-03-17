@@ -4,7 +4,7 @@ import React from 'react';
 
 import { G, Path, Text, Use } from 'react-native-svg';
 
-import { blackColor } from '../../constants/colors';
+import { blackColor } from 'constants/colors';
 
 import { Sprite } from './Sprite';
 import { styles } from './styles';
