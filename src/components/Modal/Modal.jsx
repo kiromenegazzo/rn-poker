@@ -23,17 +23,16 @@ export const Modal = ({ content, onClose }) => {
       visible={Boolean(item)}
     >
       <View style={styles.modal}>
-
         <View style={styles.inner}>
           <View style={styles.content}>
-
-            <Text style={styles.name}>{name}</Text>
-            <Text style={styles.description}>{description}</Text>
-
-            {svgName && <Hand height="100%" width="100%" />}
             <Pressable style={styles.close} onPress={onClose}>
               <Close />
             </Pressable>
+            <Text style={styles.name}>{name}</Text>
+            <View style={styles.hand}>{svgName && <Hand height="100%" width="100%" />}</View>
+          </View>
+          <View style={styles.footer}>
+            <Text style={styles.description}>{description}</Text>
           </View>
         </View>
       </View>
