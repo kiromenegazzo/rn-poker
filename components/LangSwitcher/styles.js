@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { secondaryColor } from '../../constants/colors';
+import { greenDarkColor } from '../../constants/colors';
 
 export const styles = StyleSheet.create({
   switch: {
@@ -10,6 +10,6 @@ export const styles = StyleSheet.create({
     marginRight: 20,
   },
   text: {
-    color: secondaryColor,
+    color: greenDarkColor,
   },
 });

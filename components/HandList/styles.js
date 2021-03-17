@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { secondaryColor, whiteColor } from '../../constants/colors';
+import { greenDarkColor, whiteColor } from '../../constants/colors';
 
 export const styles = StyleSheet.create({
   list: {
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 8,
     textAlign: 'center',
     borderRadius: 20,
-    backgroundColor: secondaryColor,
+    backgroundColor: greenDarkColor,
     color: whiteColor,
   },
 });

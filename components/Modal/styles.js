@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
 
-import { primaryColor, secondaryColor } from '../../constants/colors';
+import { greenColor, greenDarkColor } from '../../constants/colors';
 
 export const styles = StyleSheet.create({
   modal: {
     flex: 1,
-    backgroundColor: primaryColor,
+    backgroundColor: greenColor,
   },
   inner: {
     flex: 1,
@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
   content: {
     flex: 1,
     borderWidth: 2,
-    borderColor: secondaryColor,
+    borderColor: greenDarkColor,
     borderRadius: 8,
   },
   close: {
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     textAlign: 'center',
     fontSize: 50,
-    color: secondaryColor,
+    color: greenDarkColor,
   },
   description: {
     position: 'absolute',
@@ -36,6 +36,6 @@ export const styles = StyleSheet.create({
     width: '100%',
     textAlign: 'center',
     fontSize: 20,
-    color: secondaryColor,
+    color: greenDarkColor,
   },
 });

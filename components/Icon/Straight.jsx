@@ -4,13 +4,15 @@ import React from 'react';
 
 import { Path, Use, G, Text } from 'react-native-svg';
 
+import { blackColor, redColor } from '../../constants/colors';
+
 import { Sprite } from './Sprite';
 import { styles } from './styles';
 
 export const Straight = ({ width, height }) => (
   <Sprite height={height} width={width}>
     <Use href="#card" transform="matrix(.84066,-.38265,.38265,.84066,8596.77,35049.1)" />
-    <G fill="#282828">
+    <G fill={blackColor}>
       <Text
         style={styles.text}
         transform="matrix(.91015,-.41428,.41428,.91015,-100765,26367.8)"
@@ -23,7 +25,7 @@ export const Straight = ({ width, height }) => (
     </G>
     <Use href="#card" transform="matrix(.9039,-.19002,.19002,.9039,33541.6,20217.6)" />
     <Text
-      fill="#282828"
+      fill={blackColor}
       style={styles.text}
       transform="matrix(.97861,-.20573,.20573,.97861,-71245.8,-12124.2)"
       x="100000"
@@ -31,13 +33,13 @@ export const Straight = ({ width, height }) => (
     >
       4
     </Text>
-    <G fill="#e03c1b">
+    <G fill={redColor}>
       <Path d="m45592 35253l-1749 3851-3153-2819 1751-3851z" />
       <Path d="m57057 33324l-3061 6739-5517-4934 3063-6739z" />
       <Path d="m68458 87560l-3061 6738-5517-4934 3063-6739z" />
     </G>
     <Use href="#card" transform="matrix(.91782,-.10366,.10366,.91782,62671.4,15115.7)" />
-    <G fill="#282828">
+    <G fill={blackColor}>
       <Text
         style={styles.text}
         transform="matrix(.99368,-.11223,.11223,.99368,-38600.5,-26991.9)"
@@ -51,7 +53,7 @@ export const Straight = ({ width, height }) => (
       <Path d="m86077 80380c1565 976 3750 2882 4918 4308 3327 4028-1523 6838-3659 4022 272 1055 700 1993 1236 2672l-2473 280c371-782 578-1792 608-2881-1454 3221-6808 1564-4463-3104 820-1651 2525-3997 3833-5297" />
     </G>
     <Use href="#card" transform="matrix(.92359,.0109,-.0109,.92359,91538.7,12632.7)" />
-    <G fill="#282828">
+    <G fill={blackColor}>
       <Text style={styles.text} transform="matrix(.99993,.0118,-.0118,.99993,-3765.67,-41703)" x="100000" y="65000">
         6
       </Text>
@@ -62,7 +64,7 @@ export const Straight = ({ width, height }) => (
     </G>
     <Use href="#card" transform="matrix(.87781,.28739,-.28739,.87781,129219,17038.9)" />
     <Text
-      fill="#282828"
+      fill={blackColor}
       style={styles.text}
       transform="matrix(.95036,.31114,-.31114,.95036,54711.3,-63340.7)"
       x="100000"
@@ -70,7 +72,7 @@ export const Straight = ({ width, height }) => (
     >
       7
     </Text>
-    <G fill="#e03c1b">
+    <G fill={redColor}>
       <Path d="m131813 33250c-690-226-1434 151-1659 840 225-689-150-1432-839-1658-692-226-1434 151-1659 840-340 1039 1292 4500 1292 4500 0 0 3366-1825 3706-2864 226-688-151-1432-841-1658" />
       <Path d="m149805 66530c-1262-413-2623 276-3035 1535 412-1259-275-2618-1535-3031-1264-414-2622 276-3034 1536-622 1901 2364 8231 2364 8231 0 0 6156-3337 6778-5238 413-1260-276-2620-1538-3033" />
       <Path d="m174228 45369c-1262-413-2623 275-3035 1535 412-1260-275-2619-1535-3032-1265-413-2622 277-3035 1536-622 1901 2364 8231 2364 8231 0 0 6157-3337 6779-5238 412-1259-276-2619-1538-3032" />
@@ -82,7 +84,7 @@ export const Straight = ({ width, height }) => (
       <Path d="m125383 87692c-1262-413-2623 276-3036 1535 413-1259-274-2618-1534-3031-1265-414-2622 276-3035 1535-622 1902 2364 8232 2364 8232 0 0 6156-3337 6779-5239 412-1259-276-2619-1538-3032" />
     </G>
     <Text
-      fill="#282828"
+      fill={blackColor}
       style={styles.text}
       transform="matrix(-.95036,-.31114,.31114,-.95036,237376,203924)"
       x="100000"

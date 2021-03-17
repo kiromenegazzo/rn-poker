@@ -2,11 +2,11 @@ import React from 'react';
 
 import Svg, { Circle, Line } from 'react-native-svg';
 
-import { secondaryColor } from '../../constants/colors';
+import { greenDarkColor } from '../../constants/colors';
 
 export const Close = () => {
   const strokeWidth = 3;
-  const stroke = secondaryColor;
+  const stroke = greenDarkColor;
   const lineStart = 14;
   const lineEnd = 46;
 
