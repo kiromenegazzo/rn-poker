@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "awesome",
-    "slug": "awesome",
+    "name": "Poker hands",
+    "slug": "Poker hands",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
